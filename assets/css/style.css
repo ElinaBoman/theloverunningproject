@@ -83,15 +83,18 @@ main {
 
 
 /* footer color */
-footer {
-    background-color: chartreuse;
-
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
-
-
-ul > li {
-    list-style: none;
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 @media screen and (min-width: 768px) {
