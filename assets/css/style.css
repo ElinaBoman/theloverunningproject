@@ -72,9 +72,14 @@ h1 {
 
 /* main color main color */
 main {
-    background-color: blue;
-    flex: 1 0 auto;
-    margin-top: 47px;
+ flex: 1 0 auto;
+margin-top: 47px;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 #menu>li {
@@ -130,7 +135,6 @@ main {
         margin-top: 79px;
     }
 
-}
 
 @media screen and (min-width: 992px) {
     #menu a:hover {
