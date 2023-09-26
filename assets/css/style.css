@@ -70,7 +70,7 @@ nav {
 
 /* main color main color */
 main {
- flex: 1 0 auto;
+flex: 1 0 auto;
 margin-top: 47px;
 }
 
@@ -95,10 +95,58 @@ margin-top: 47px;
 #cover-text > h2, #cover-text > h3{
     color: #ffffff;
 }
+
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+
+
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+
+#physical > div, #mental > div {
+line-height: 20px;
+margin-bottom: 20px;
+
+
+}
+
+hr {
+border-top: 1px solid #3a3a3a;
+margin: 5px 0;
+}
+
+#reasons > p {
+    padding: 0 20px;
+}
+
+
 #menu>li {
     padding-left: 1rem;
 }
 
+#circle-cover-bg {
+background: url('../images/reasons-image.webp') no-repeat top center / cover;
+height: 90vw;
+width: 90vw;
+margin-bottom: 20px;
+border-radius: 50%;
+max-width: 300px;
+max-height: 300px;
+}
+
+#benefits-image {
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 /* footer color */
 #social-networks {
@@ -133,11 +181,11 @@ margin-top: 47px;
     }
 
     .nav-toggle-label {
-        font-size: 2rem;
+
         display: none;
     }
 
-}
+
     #logo {
         font-size: 280%;
         line-height: 75px;
@@ -151,10 +199,49 @@ margin-top: 47px;
     #cover-text {
         width: 300px;
         right: 50px;
-    }
+}
+#physical, 
+#mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#physical > div,
+#mental > div {
+    width: 75%;
+}
+
+#mental>div {
+text-align: end;
+align-self: flex-end;
+}
 
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+}
+
+@media screen and (min-width: 1200px){
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+#reasons > div {
+    flex: 1;
+}
+#benefits-image {
+    order: 0;
+
+}
+
+#mental {
+    order: 1;
+}
+#mental > div {
+    align-self: flex-start;
+}
+#physical > div {
+    align-self: flex-end;
 }
