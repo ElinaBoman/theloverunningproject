@@ -76,6 +76,7 @@ nav {
 main {
 flex: 1 0 auto;
 margin-top: 47px;
+flex-direction: column;
 }
 
 #hero {
@@ -202,6 +203,33 @@ border: 2px solid white;
 
 #times h3 {
     color: #fafafa;
+}
+
+/* sign up form*/
+
+#text-form {
+
+}
+
+#sign-up {
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    background: url('../images/signup-image.webp') no-repeat center / cover;
+    padding: 20px 10px;
+}
+
+
+#sign-up > h2 {
+    color: #fafafa;
+}
+
+#sign-up-form {
+    color: #ffffff;
+    background-color: 60, 60, 60, 0.6;
+    padding: 30px;
+
+
 }
 
 @media screen and (min-width: 576px) {
